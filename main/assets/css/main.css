@@ -89,15 +89,33 @@ header .mnu_top li a:hover {
     background-color: #F7F5FF;
 }
 
-.back_panorama {
+.about--us {
+    display: flex;
+    z-index: 2;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 0;
+    background-color: #F7F5FF;
+}
+
+.panorama_top {
     width: 100%;
     z-index: -1;
-    background-image: url("../img/IMG_2460.jpg");
+    background-image: url("../img/panorama_top.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 150px 0;
     filter: blur(2px);
+}
 
+.panorama_bottom {
+    width: 100%;
+    z-index: -1;
+    background-image: url("../img/panorama_bottom.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 150px 0;
+    filter: blur(2px);
 }
 
 .back_panorama img {
@@ -177,6 +195,52 @@ header .right_header {
     font-size: 25px;
     color: #3F3E3E;
     font-family: Ubuntu-Light, serif;
+}
+
+/*Information / About Us*/
+
+.information_about {
+    text-align: -webkit-left;
+    margin-top: 120px;
+}
+
+.information_about h1 {
+    margin: 0;
+    font-size: 50px;
+    color: #0081FF;
+    font-family: Ubuntu-Bold, serif;
+}
+
+.information_about p {
+    font-size: 25px;
+    color: #3F3E3E;
+    font-family: Ubuntu-Light, serif;
+}
+
+.information_about ol {
+    list-style: none;
+    counter-reset: li
+}
+
+.information_about li {
+    line-height: 1.5;
+    font-size: 25px;
+    color: #3F3E3E;
+    font-family: Ubuntu-Light, serif;
+    counter-increment: li
+}
+
+.information_about li::before {
+    content: counter(li);
+    font-size: 25px;
+    font-family: Ubuntu-Medium, serif;
+    color: #0081FF;
+    display: inline-block;
+    width: 1em;
+    margin-left: -2em; /* Если сдвигать - то это*/
+    margin-right: 0.5em;
+    text-align: right;
+    direction: rtl
 }
 
 /*Products*/
@@ -290,7 +354,7 @@ footer li a:hover {
 }
 
 .first_page_screen p {
-    text-align: center;
+    text-align: right;
 }
 
 
