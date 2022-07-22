@@ -1,9 +1,49 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #94C7F9;
+  background-color: #F7F5FF;
   line-height: 1.9;
   color: #8c8c8c;
-  position: relative; }
+  position: relative;
+}
+
+header {
+  background-color: transparent;
+  padding: 10px 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header .logo {
+  max-width: 100%;
+  display: block;
+}
+
+header .right_header {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.close {
+  color: #94C7F9;
+  margin-top: 15px;
+}
+
+.close i {
+  font-size: 40px;
+}
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -64,13 +104,13 @@ a {
 
 .btn {
   border: none;
-  border-radius: 0;
   font-size: 15px;
   letter-spacing: .2rem;
   text-transform: uppercase;
   border-radius: 30px !important;
 }
   .btn.btn-primary {
+    font-family: Ubuntu-Medium, sans-serif;
     border-radius: 30px;
     background: #0081FF;
     color: #fff;
