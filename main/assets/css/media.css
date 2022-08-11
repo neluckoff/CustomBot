@@ -1,6 +1,7 @@
 @media screen and (max-width: 992px) {
     .hero {
         min-height: inherit;
+        padding-top: 30px;
     }
 
     .second {
@@ -14,12 +15,33 @@
     .right_header ul {
         display: none;
     }
+
+    .btn .btn_buy {
+        padding: 15px 30px;
+        font-size: 1.2em;
+    }
+
+    .btn .btn_vk {
+        padding: 12px 27px;
+        font-size: 1.2em;
+    }
+
+    header {
+        padding: 13px 0;
+    }
+
+    footer .footer--col {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
     .hero img {
         max-width: 70%;
-        /*display: none;*/
     }
 
     .first_page_screen p {
